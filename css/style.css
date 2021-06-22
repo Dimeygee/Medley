@@ -281,25 +281,43 @@ nav ul li:last-child a{
 
 
 header{
-    margin-top:150px;
     min-height:100vh;
-    display:flex;
-    padding:0 100px ;
+    
+    width:calc(100% - 200px);
+    margin:150px auto 0;
+    position:relative;
 }
 
+
+.con_left{
+    width:60%;
+    
+}
+
+.con_left p{
+   padding-right:90px;
+}
+
+.con_right{
+    width:40%;
+    position:absolute;
+    top:0;
+    right:0;
+    display:flex;
+    justify-content: flex-end;
+}
 	
 	
 .con_left h1{
     font-size:60px;
-    width:661px;
+    width:100%;
     line-height: 80px;
 }
 
 
 .con_left p{
     font-size:16px;
-    width: 600px;
-    height: 52px;
+    width: 100%;
     line-height: 26px;
     margin:45px 0;
     color: #4F4F4F;
@@ -332,15 +350,10 @@ header{
     background-image: url(../images/appstore.svg);
 }
 
-.con_right{
-    max-width: 40%;
-    width:100%;
-    min-height: 284px;
-}
 
 .con_right >  div{
-    width:90%;
-    float:right;
+    width:85%;
+    position:relative;
 }
 
 .hero_img{
@@ -1523,7 +1536,6 @@ button.ads{
     
     nav {
         padding: 20px 20px;
-        top:80px;
     }
 
     nav ul li:last-child {
@@ -1533,7 +1545,14 @@ button.ads{
     }
 
     header {
-        padding: 150px 20px 0 20px;
+        margin:150px 20px 0 20px;
+        width:unset;
+    }
+
+    .user_div{
+        flex-direction: column;
+        width:100%;
+        height:180px;
         justify-content: space-between;
     }
 
@@ -1548,8 +1567,31 @@ button.ads{
     }
 
     .con_left,.con_right{
-        width:50%;
-        height:100%;
+        width:100%;
+        position: unset;
+    }
+
+    .con_left{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0 100px;
+    }
+
+    .con_left h1,    .con_left p{
+        text-align: center;
+    } 
+    .con_right{
+        margin-top:unset !important;
+    }
+
+    .con_left p{
+        padding-right:unset;
+     }
+
+    .user_div{
+        width:unset;
     }
 
     .con_right > div{
@@ -1746,13 +1788,22 @@ button.ads{
     }
 
     header{
-        padding-left:20px;
-        padding-right:20px;
+        margin-left:20px;
+        margin-right:20px;
         display:block;
+        width:unset;
+        position:unset;
     }
 
     header .con_left{
         max-width:100%;
+        position: unset;
+        width:100%;
+    }
+
+    header .con_right{
+        width:100%;
+        position:unset;
     }
 
     header .con_left .zing{
@@ -1773,11 +1824,11 @@ button.ads{
     .con_left p{
         width: 100%;
         position: relative;
-        height: 104px;
         font-size: 16px;
         line-height: 26px !important;
         margin:41.5px auto;
         text-align:center;
+        padding:unset;
     }
 
 
@@ -2259,7 +2310,7 @@ button.ads{
 
   @media screen and (min-width:280px) and (max-width:1024px){
       .con_right{
-        margin-top:-45px;
+        margin-top:-40px;
       }
   }
 
