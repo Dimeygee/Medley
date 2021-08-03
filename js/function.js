@@ -1,21 +1,6 @@
 
-	let preloader = document.querySelector('#preloader')
-	
-	
-	
-	setTimeout(() => {
-		preloader.classList.add('isnotactive')
-		setTimeout(() => {
-			preloader.style.display = 'none'
-		},500)
-	},2000)
-	
 
-	AOS.init({
-			duration: 800
-		});
-
-
+	
 
  function toggleMenu() {
 	const menus = document.querySelectorAll('.hamburger');
@@ -29,6 +14,7 @@
             list.classList.toggle('active')
         })	
     }
+
 
 
 	
